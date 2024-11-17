@@ -3,7 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Monserrat</title>
-</head>
+    <!-- Metadatos para SEO -->
+    <meta name="description" content="Perfil profesional de Monserrat Bustos">
+    <meta name="keywords" content="html, herramientas de depurado de metadatos, proyecto web">
+    <meta name="author" content="Monserrat Bustos">
 
+    <!-- Open Graph para optimizacion en redes sociales -->
+    <meta
+       property="og:title"
+       content="Portafolio de Monserrat Bustos"
+       />
+       <meta
+       property="og:description"
+       content="Perfil profesional de Monserrat Bustos"
+       />
+       <meta
+       property="og:image"
+       content="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/butter.jpg"
+       />
+       <meta
+       property="og:type"
+       content="profile"
+       />
+
+       <!-- Twitter Cards para visualizar contenido en Twitter -->
+       <meta
+       name="twitter:card"
+       content="summary_large_image"
+       />
+       <meta
+       name="twitter:title"
+       content="Portafolio de Monserrat Bustos"
+       />
+       <meta
+       name="twitter:description"
+       content="Descubre el perfil profesional de Monserrat Bustos sus proyectos de html"
+       />
+       <meta
+       name="twitter:image"
+       content="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/skz.jpg"
+       />
+    <title>Portafolio de Monserrat Bustos</title>
+</head>
+<body>
+    <header>
+        <h1>Perfil de Monserrat Bustos</h1>
+        <!-- aria-label sirve para indicar el proposito de una etiqueta, en este caso la etiqueta nav -->
+        <nav aria-label="Enlaces de redes sociales de Monserrat Bustos">
+            <ul>
+                <li>
+                    <a href="#">Linkedin</a>
+                </li>
+                <li>
+                    <a href="#">GitHub</a>
+                </li>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <!-- Resumen profesional-->
+         <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene una descripcion -->
+        <section aria-labelledby="resumen-profesional-titulo">
+            <h2 id="resumen-profesional-titulo">Resumen profesional</h2>
+            <p>Me llamo Monserrat y estoy aprendiendo desarrollo web y etiquetas semanticas de html.</p>
+        </section>
+        <!-- Habilidades y herramientas-->
+         <section aria-labelledby="habilidades-titulo">
+            <h2 id="habilidades-titulo">Habilidades y herramientas</h2>
+            <ul>
+                <li>HTM5</li>
+                <li>Control de versiones de Git y Github</li>
+                <li>Accesibilidad</li>
+            </ul>
+         </section>
+         <!-- Proyectos realizados -->
+         <section aria-labelledby="proyectos-titulo">
+            <h2 id="proyectos-titulo">Proyectos</h2>
+            <!-- Proyecto 1 -->
+            <article aria-label="Primer proyecto de un html semantico">
+                <header>   
+                    <h3>Mi primer HTML semantico</h3>
+                    <p>
+                        <time datetime="2024-11">Noviembre 2024</time>
+                        <span>Tecnologias: HTML,Git,Github</span>
+                    </p>
+                </header>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/txt.jpg" alt="Captura de pantalla de mi html semantico" width="500px" height="300px">
+                    <figcaption>Pantalla principal de mi html semantico</figcaption>
+                </figure>
+                <a href="https://github.com/moonieym/practica-fronted-modulo-1/blob/c954c192af6a4b393f2bec299fb3f46ec6bc5f56/CLASE-07-11-24/ejercicio-1.html" target="_blank">Ver en Github</a>
+            </article>
+            <!-- Proyecto 2 -->
+            <article aria-label="Segundo proyecto que es una receta de cocina">
+                <header>
+                    <h3>Mi receta de cocina</h3>
+                    <p>
+                        <time datetime="2024-11">Noviembre 2024</time>
+                        <span>Tecnologias: HTML, Git, Github</span>
+                    </p>
+                </header>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/ateez.jpg" alt="Captura de pantalla de mi receta de cocina" width="300px" height="200px">
+                    <figcaption>Pantalla principal de mi receta de cocina</figcaption>
+                </figure>
+                <a href="https://github.com/moonieym/practica-fronted-modulo-1/blob/c0e8ed004b1fa83a508ee0a297aee05152ca9e23/CLASE-30-10-24/mi-primer-html.html" target="_blank">Ver en Github</a>
+            </article>
+         </section>
+         <aside aria-labelledby="contacto-titulo">
+            <h2 id="contacto-titulo">Contacto</h2>
+            <p>Si deseas discutir de un proyecto o colaboracion, contactame a:</p>
+            <address>
+                <p>Email <a href="mailto:correo@correo.com">correo@correo@correo</a></p>
+            </address>
+            <p>55 55 55 55 55</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Monserrat Bustos. Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces de redes sociales de Monserrat">
+            <ul>
+                <li>
+                    <a href="#">LinkeIn</a>
+                </li>
+                <li>
+                    <a href="#">Github</a>
+                </li>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
 </html>
