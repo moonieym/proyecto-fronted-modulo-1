@@ -43,6 +43,10 @@
        name="twitter:image"
        content="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/skz.jpg"
        />
+       <!-- Enlace a Material Icons -->
+      <!-- Este enlace carga la biblioteca de Material Icons desde Google Fonts, permitiendo el uso de iconos con nombres especificos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" href="assets/moon.png" type="image/x-icon"/>
     <title>Portafolio de Monserrat Bustos</title>
 </head>
 <body>
@@ -51,15 +55,10 @@
         <!-- aria-label sirve para indicar el proposito de una etiqueta, en este caso la etiqueta nav -->
         <nav aria-label="Enlaces de redes sociales de Monserrat Bustos">
             <ul>
-                <li>
-                    <a href="#">Linkedin</a>
-                </li>
-                <li>
-                    <a href="#">GitHub</a>
-                </li>
-                <li>
-                    <a href="#">Twitter</a>
-                </li>
+                <li><a href="#"><span class="material-icons">home</span>Inicio</a></li>
+                <li><a href="#"><span class="material-icons">favorite</span>Sobre mi</a></li>
+                <li><a href="#"><span class="material-icons">bookmarks</span>Articulos</a></li>
+                <li><a href="#contacto"><span class="material-icons">contact_page</span>Contacto</a></li>
             </ul>
         </nav>  
     </header>
@@ -107,11 +106,68 @@
                     </p>
                 </header>
                 <figure>
-                    <img src="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/ateez.jpg" alt="Captura de pantalla de mi receta de cocina" width="300px" height="200px">
+                    <img src="https://raw.githubusercontent.com/moonieym/proyecto-fronted-modulo-1/refs/heads/main/ateez.jpg" alt="Captura de pantalla de mi receta de cocina" width="500px" height="300px">
                     <figcaption>Pantalla principal de mi receta de cocina</figcaption>
                 </figure>
                 <a href="https://github.com/moonieym/practica-fronted-modulo-1/blob/c0e8ed004b1fa83a508ee0a297aee05152ca9e23/CLASE-30-10-24/mi-primer-html.html" target="_blank">Ver en Github</a>
             </article>
+         <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <p>Rellena el formulario para enviarme tus comentarios o preguntas.</p>
+             <!-- Formulario de contacto -->
+             <form>
+                <!-- label es una etiqueta que nos sirve para asociar un texto descrptivo a un elemento de entrada.
+                 El atributo for en label ayuda a vincularlo con eun elemento de formulario especifico ya que el atributo for contiene el id del campo de entrada con el cual se asocia -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Coreo electronico:</label>
+                <input type="email" id="email" placeholder="Ejemplo@correo.com" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto">
+                    <option>Consulta</option>
+                    <option>Sugerencia</option>
+                    <option>Queja</option>
+                    <option>Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+                <!-- fieldset nos sirve para agrupar elementos de un formulario relacionado. Facilita la compresion navegacion en el formulario, especialmnete para los usuarios de lectores de pantalla -->
+                <fieldset>
+                    <!-- legend nos ayuda a proporcionar un titulo a mi grupo de informacion almacenado el fieldset -->
+                    <legend>Genero</legend>
+                    <!-- Cada boton de radio tiene el mismo 'name' para permitir seleccionar solo una opcion en este grupo -->
+                    <label for="genero-masculino">Masculino</label>
+                    <input type="radio" name="Genero" id="genero-masculino">
+
+                    <label for="genero-femenino">Femenino</label>
+                    <input type="radio" name="Genero" id="genero-femenino">
+
+                    <label for="genero-otro">Otro</label>
+                    <input type="radio" name="Genero" id="genero-otro">
+                </fieldset>   
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="Intereses">Musica</label>
+                    <input type="checkbox" name="Musica" id="Intereses-Musica">
+                    <label for="Intereses">Leer</label>
+                    <input type="checkbox" name="Leer" id="Intereses-Leer">
+                    <label for="Intereses">Bailar</label>
+                    <input type="checkbox" name="Bailar" id="Intereses-Bailar">
+                    <label for="Intereses">Ver series y peliculas</label>
+                    <input type="checkbox" name="Ver series y peliculas" id="Intereses-Ver series y peliculas">
+                    <label for="Intereses">Escribir</label>
+                    <input type="checkbox" name="Escribir" id="Intereses-Escribir">
+                </fieldset>
+
+                <input type="file" name="archivo" id="archivo">
+
+                <button type="submit"><span class="material-icons">send</span>Enviar</button>
+
+             </form>
          </section>
          <aside aria-labelledby="contacto-titulo">
             <h2 id="contacto-titulo">Contacto</h2>
