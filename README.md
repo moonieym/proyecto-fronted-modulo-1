@@ -8,7 +8,7 @@ En este proyecto se usan las etiquetas semanticas, de formulario e imagenes para
 
     ```
 
-    git clone https://github.com/usuario/nombre-del-proyecto.git
+    gh repo clone moonieym/proyecto-fronted-modulo-1
 
     ```
 
@@ -16,7 +16,7 @@ En este proyecto se usan las etiquetas semanticas, de formulario e imagenes para
 
     ```
 
-    cd nombre-del-proyecto
+    cd proyecto-fronted-modulo-1
 
     ```
 
@@ -24,10 +24,10 @@ En este proyecto se usan las etiquetas semanticas, de formulario e imagenes para
 
     ```
 
-    comando para ejecutar
+    https://moonieym.github.io/proyecto-fronted-modulo-1/
 
     ```
 
 ## Autor
 
-Creado por [Tu Nombre](https://github.com/tuusuario) - ¡Si te gusta el proyecto, no du
+Creado por [Monserrat Bustos](https://github.com/moonieym) - ¡Si te gusta el proyecto, no dudes en contactarme!
