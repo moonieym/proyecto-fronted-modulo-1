@@ -55,14 +55,46 @@
         <!-- aria-label sirve para indicar el proposito de una etiqueta, en este caso la etiqueta nav -->
         <nav aria-label="Enlaces de redes sociales de Monserrat Bustos">
             <ul>
+                <!-- Menu de navegacion -->
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Sobre-mi">Sobre mi</a></li>
+                <li><a href="#Intereses">Intereses</a></li>
+                <li><a href="#Resumen-profesional">Resumen profesional</a></li>
+                <li><a href="#Habilidades-y-herramientas">Habilidades y herramientas</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Enlaces">Enlaces</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
                 <li><a href="#"><span class="material-icons">home</span>Inicio</a></li>
                 <li><a href="#"><span class="material-icons">favorite</span>Sobre mi</a></li>
-                <li><a href="#"><span class="material-icons">bookmarks</span>Articulos</a></li>
+                <li><a href="#"><span class="material-icons">bookmarks</span>Intereses</a></li>
+                <li><a href="#"><span class="material-icons">work</span>Resumen profesional</a></li>
+                <li><a href="#"><span class="material-icons">build</span>Habilidades y herramientas</a></li>
+                <li><a href="#"><span class="material-icons">code</span>Proyectos</a></li>
+                <li><a href="#"><span class="material-icons">group</span>Enlaces</a></li>
                 <li><a href="#contacto"><span class="material-icons">contact_page</span>Contacto</a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
     <main>
+        <section id="Sobre-mi">
+            <h2>Sobre mi</h2>
+             <p>Me llamo Monserrat y estoy aprendiendo desarrollo web y etiquetas semanticas de html.</p>
+        </section>
+        <section id="intereses">
+             <h2>Intereses</h2>
+             <ul>
+                <li>Escuchar musica</li>
+                <li>Leer</li>
+                <li>Bailar</li>
+                <li>Ver series y peliculas</li>
+             </ul>
+            
+             <!-- figure agrupa cpntenido visual como imagenes, y es comun utilizarla en conjunto con la etiqueta figcaption, que roporciona un titulo o descripcion para el contenido visual-->
+             <figure>
+             <img src="./bts.jpg" alt="Mi grupo favorito" width="300px" title="BTS">
+             <figcaption>Imagen representativa de mis intereses. BTS es uno de mis grupos favoritos.</figcaption>
+             </figure>
+         </section>
         <!-- Resumen profesional-->
          <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene una descripcion -->
         <section aria-labelledby="resumen-profesional-titulo">
